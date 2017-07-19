@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LSn-Ut-daz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="XCO-XP-tPg">
+            <objects>
+                <viewController id="LSn-Ut-daz" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S0u-Nk-lDf"/>
+                        <viewControllerLayoutGuide type="bottom" id="QlO-zF-4fL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nug-he-J9n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Znw-uv-Nyp" customClass="HYIconButton">
+                                <rect key="frame" x="16" y="20" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0QJ-83-7bc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="normalIcon" value="icon_collect"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="space">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="normalTitle" value="333"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARg-Xk-0S4" customClass="HYIconButton">
+                                <rect key="frame" x="16" y="90" width="343" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ezi-s2-KnF"/>
+                                </constraints>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DZ-Fv-vDz" customClass="HYIconButton">
+                                <rect key="frame" x="16" y="160" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.1201141855" green="0.82087920979999995" blue="0.59878143939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XvX-GF-7XJ"/>
+                                </constraints>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRs-Bz-c70" customClass="HYIconButton">
+                                <rect key="frame" x="16" y="230" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cx3-k4-ZFW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TRs-Bz-c70" firstAttribute="height" secondItem="8DZ-Fv-vDz" secondAttribute="height" id="0ag-ik-e7O"/>
+                            <constraint firstItem="8DZ-Fv-vDz" firstAttribute="leading" secondItem="ARg-Xk-0S4" secondAttribute="leading" id="2Ub-dN-oM5"/>
+                            <constraint firstItem="8DZ-Fv-vDz" firstAttribute="height" secondItem="ARg-Xk-0S4" secondAttribute="height" id="88d-in-S9J"/>
+                            <constraint firstItem="TRs-Bz-c70" firstAttribute="top" secondItem="8DZ-Fv-vDz" secondAttribute="bottom" constant="20" id="8YG-vG-etf"/>
+                            <constraint firstItem="Znw-uv-Nyp" firstAttribute="top" secondItem="S0u-Nk-lDf" secondAttribute="bottom" id="9B0-JK-9nR"/>
+                            <constraint firstItem="8DZ-Fv-vDz" firstAttribute="trailing" secondItem="ARg-Xk-0S4" secondAttribute="trailing" id="CTV-9G-Igq"/>
+                            <constraint firstItem="ARg-Xk-0S4" firstAttribute="leading" secondItem="Znw-uv-Nyp" secondAttribute="leading" id="CWC-RX-iTZ"/>
+                            <constraint firstItem="TRs-Bz-c70" firstAttribute="leading" secondItem="8DZ-Fv-vDz" secondAttribute="leading" id="IE5-YV-Sfw"/>
+                            <constraint firstItem="TRs-Bz-c70" firstAttribute="trailing" secondItem="8DZ-Fv-vDz" secondAttribute="trailing" id="OaE-ld-6PO"/>
+                            <constraint firstItem="8DZ-Fv-vDz" firstAttribute="top" secondItem="ARg-Xk-0S4" secondAttribute="bottom" constant="20" id="Plc-ZG-vJb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Znw-uv-Nyp" secondAttribute="trailing" id="Rte-nc-kaZ"/>
+                            <constraint firstItem="ARg-Xk-0S4" firstAttribute="top" secondItem="Znw-uv-Nyp" secondAttribute="bottom" constant="20" id="brg-LD-qSo"/>
+                            <constraint firstItem="ARg-Xk-0S4" firstAttribute="trailing" secondItem="Znw-uv-Nyp" secondAttribute="trailing" id="sqS-KE-HO3"/>
+                            <constraint firstItem="Znw-uv-Nyp" firstAttribute="leading" secondItem="nug-he-J9n" secondAttribute="leadingMargin" id="uNg-1p-Rtj"/>
+                            <constraint firstItem="ARg-Xk-0S4" firstAttribute="height" secondItem="Znw-uv-Nyp" secondAttribute="height" id="ypK-Ws-a5k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="Znw-uv-Nyp" id="D7z-3h-5GI"/>
+                        <outlet property="btn2" destination="ARg-Xk-0S4" id="8Hj-ag-g71"/>
+                        <outlet property="btn3" destination="8DZ-Fv-vDz" id="2vs-ms-eSD"/>
+                        <outlet property="btn4" destination="TRs-Bz-c70" id="aRd-0P-fjb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MU3-J4-UDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="-125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_collect" width="17" height="16"/>
+    </resources>
+</document>
